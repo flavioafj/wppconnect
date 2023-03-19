@@ -1,0 +1,13 @@
+{
+  "name": "wppconnect",
+  "version": "1.0.0",
+  "description": "wpp",
+  "main": "y",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
