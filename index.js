@@ -19,7 +19,7 @@ wppconnect
 
 function start(client) {
   client.onMessage((message) => {
-    if (message.body === '11'||message.body === '33'||message.body === '44'||message.body === '55') {
+    if (message.body === '1'||message.body === '3'||message.body === '4'||message.body === '5') {
       client
         .sendText(message.from, resposta(message.body))
         .then((result) => {
@@ -29,7 +29,7 @@ function start(client) {
           console.error('Error when sending: ', erro); //return object error
         });
     }
-    if (message.body === '22') {
+    if (message.body === '2') {
       
       client
         .sendText(message.from, resposta(message.body))
@@ -49,7 +49,7 @@ function start(client) {
         });
         sendLoc(client, message.from);
     }
-    if (message.body === '65') {
+    if (message.body === '6') {
     
       client
         .sendText(message.from, resposta(message.body))

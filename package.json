@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "wpp",
   "main": "index.js",
-  "dependencies": {   
-  "@wppconnect/wa-js": "^2.22.0",
-  "@wppconnect/wa-version": "^1.2.5"
-},
+  "dependencies": {
+    "@wppconnect-team/wppconnect": "^1.23.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC"
