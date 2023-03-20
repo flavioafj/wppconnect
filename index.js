@@ -2,6 +2,7 @@
 // import { create, Whatsapp } from '@wppconnect-team/wppconnect';
 const wppconnect = require('@wppconnect-team/wppconnect');
 const resposta = require('./functions.js');
+const {join} = require('path');
 
 async function sendLoc(client, quem){
 
@@ -83,3 +84,8 @@ function start(client) {
     }
   });
 }
+
+module.exports = {
+  // Changes the cache location for Puppeteer.
+  cacheDirectory: join(__dirname, '.cache', 'puppeteer'),
+};
