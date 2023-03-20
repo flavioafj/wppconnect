@@ -13,7 +13,7 @@ async function sendLoc(client, quem){
 }
 
 wppconnect
-  .create()
+  .create({browserArgs: ['--no-sandbox']})
   .then((client) => start(client))
   .catch((error) => console.log(error));
 
