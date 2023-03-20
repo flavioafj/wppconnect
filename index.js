@@ -13,7 +13,14 @@ async function sendLoc(client, quem){
 }
 
 wppconnect
-  .create({browserArgs: ['--no-sandbox']})
+  .create({
+    session: 'teste',
+    onLoadingScreen: (percent, message) => {
+      console.log('LOADING_SCREEN', percent, message);
+    },
+    browserArgs: ['--no-sandbox'], // Parameters to be added into the chrome browser instance
+    puppeteerOptions: {args: ['--no-sandbox'] },
+  })
   .then((client) => start(client))
   .catch((error) => console.log(error));
 
