@@ -4,7 +4,8 @@
   "description": "wpp",
   "main": "index.js",
   "dependencies": {
-    "@wppconnect-team/wppconnect": "^1.23.0"
+    "@wppconnect-team/wppconnect": "^1.23.0",
+    "puppeteer": "^19.7.5"
   },
   "devDependencies": {},
   "scripts": {
