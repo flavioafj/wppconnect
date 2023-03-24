@@ -27,6 +27,7 @@ wppconnect
 
 function start(client) {
   client.onMessage((message) => {
+    console.log(message.body);
     if (message.body === '1'||message.body === '3'||message.body === '4'||message.body === '5') {
       client
         .sendText(message.from, resposta(message.body))
