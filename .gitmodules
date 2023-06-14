@@ -1,0 +1,3 @@
+[submodule "wppconnect"]
+	path = wppconnect
+	url = https://github.com/wppconnect-team/wppconnect.git
