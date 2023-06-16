@@ -1,3 +1,26 @@
-2023/03/20-16:05:01.279 2c30 Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/03/20-16:05:01.279 2c30 Recovering log #480
-2023/03/20-16:05:01.283 2c30 Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000480.log 
+2023/06/15-19:51:31.989 3518 Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/15-19:51:31.989 3518 Recovering log #1068
+2023/06/15-19:51:32.086 3518 Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001068.log 
+2023/06/15-19:51:42.494 3e5c Level-0 table #1086: started
+2023/06/15-19:51:42.542 3e5c Level-0 table #1086: 986811 bytes OK
+2023/06/15-19:51:42.544 3e5c Delete type=0 #1068
+2023/06/15-19:51:43.523 3e34 Compacting 1@0 + 0@1 files
+2023/06/15-19:51:43.571 3e34 Generated table #1087@0: 34634 keys, 527158 bytes
+2023/06/15-19:51:43.577 3e34 Generated table #1088@0: 3519 keys, 60297 bytes
+2023/06/15-19:51:43.577 3e34 Compacted 1@0 + 0@1 files => 587455 bytes
+2023/06/15-19:51:43.579 3e34 compacted to: files[ 0 2 12 0 0 0 0 ]
+2023/06/15-19:51:43.579 3e34 Delete type=2 #1086
+2023/06/15-19:51:43.582 3518 Compacting 1@1 + 10@2 files
+2023/06/15-19:51:43.661 3518 Generated table #1089@1: 37231 keys, 2237991 bytes
+2023/06/15-19:51:43.714 3518 Generated table #1090@1: 3245 keys, 2151083 bytes
+2023/06/15-19:51:43.764 3518 Generated table #1091@1: 2886 keys, 2151322 bytes
+2023/06/15-19:51:43.845 3518 Generated table #1092@1: 28237 keys, 2238452 bytes
+2023/06/15-19:51:43.905 3518 Generated table #1093@1: 10870 keys, 2151266 bytes
+2023/06/15-19:51:43.952 3518 Generated table #1094@1: 3387 keys, 2125165 bytes
+2023/06/15-19:51:44.049 3518 Generated table #1095@1: 83487 keys, 2228796 bytes
+2023/06/15-19:51:44.162 3518 Generated table #1096@1: 95828 keys, 2243194 bytes
+2023/06/15-19:51:44.291 3518 Generated table #1097@1: 96639 keys, 2244978 bytes
+2023/06/15-19:51:44.406 3518 Generated table #1098@1: 96168 keys, 2243154 bytes
+2023/06/15-19:51:44.424 3518 Generated table #1099@1: 15965 keys, 374219 bytes
+2023/06/15-19:51:44.424 3518 Compacted 1@1 + 10@2 files => 22389620 bytes
+2023/06/15-19:51:44.426 3518 compacted to: files[ 0 1 13 0 0 0 0 ]

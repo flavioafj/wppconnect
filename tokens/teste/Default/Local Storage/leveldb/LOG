@@ -1,6 +1,3 @@
-2023/06/13-14:53:28.253 383c Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\Local Storage\leveldb/MANIFEST-000001
-2023/06/13-14:53:28.254 383c Recovering log #3
-2023/06/13-14:53:28.256 383c Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\Local Storage\leveldb/000003.log 
-2023/06/13-14:55:29.488 2e0c Level-0 table #5: started
-2023/06/13-14:55:29.493 2e0c Level-0 table #5: 24163 bytes OK
-2023/06/13-14:55:29.495 2e0c Delete type=0 #3
+2023/06/15-19:54:29.419 990 Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\Local Storage\leveldb/MANIFEST-000001
+2023/06/15-19:54:29.420 990 Recovering log #4
+2023/06/15-19:54:29.420 990 Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\Local Storage\leveldb/000004.log 

@@ -2,6 +2,7 @@
 // import { create, Whatsapp } from '@wppconnect-team/wppconnect';
 const wppconnect = require('@wppconnect-team/wppconnect');
 const resposta = require('./functions.js');
+const consulta_preco = require('./regex.js');
 const {join} = require('path');
 
 async function sendLoc(client, quem){
@@ -83,6 +84,18 @@ function start(client) {
       client.close();
         
     }
+
+    //if nothing happen the message will be assesed here
+
+    client
+      .sendText(message.from, consulta_preco(message.body))
+      .then((result) => {
+        console.log('Result: ', result); //return object success
+      })
+      .catch((erro) => {
+        console.error('Error when sending: ', erro); //return object error
+      });
+
   });
 }
 
