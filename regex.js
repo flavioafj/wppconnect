@@ -32,7 +32,7 @@ const regexp = (msg) =>{
 
         for (x = 0; x <= qualificadores_entrada_especificos.length; x++) {
 
-            pattern_dataDeA =  qualificadores_entrada_especificos[x] + "\\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*\\s*" + qualificadores_saida_especificos[x] + "\\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*";
+            pattern_dataDeA =  qualificadores_entrada_especificos[x] + "\\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*.*" + qualificadores_saida_especificos[x] + "\\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*";
 /*/dia\s*([0-9]+)([a-z\])*dia\s*([0-9]+)/g*/
             const re = new RegExp(pattern_dataDeA,"g");
 
