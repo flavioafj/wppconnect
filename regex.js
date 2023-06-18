@@ -9,8 +9,8 @@ const regexp = (msg) =>{
 
     let qualificadores_entrada = ["chegada", "entra", "entrada", "entro", "cheg", "entr"];
     let qualificadores_saida = ["saída", "sai", "saindo", "saio", "sai", "volt"];
-    let qualificadores_entrada_especificos = ["de", "dia", "de", "de", "do", "do", "do", "do", "dia"];
-    let qualificadores_saida_especificos = ["a", "ao", "à",  "até", "a", "ao", "à",  "até", "dia"];
+    let qualificadores_entrada_especificos = ["de", "dia", "de", "de", "do", "do", "do", "do", "dia", "dia"];
+    let qualificadores_saida_especificos = ["a", "ao", "à",  "até", "a", "ao", "à",  "até", "dia", "até"];
     let entrada = "";
     let saida = "";
     let hora_entrada = "";
@@ -32,15 +32,16 @@ const regexp = (msg) =>{
 
         for (x = 0; x <= qualificadores_entrada_especificos.length; x++) {
 
-            pattern_dataDeA =  qualificadores_entrada_especificos[x] + "\\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*.*" + qualificadores_saida_especificos[x] + "\\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*";
-/*/dia\s*([0-9]+)([a-z\])*dia\s*([0-9]+)/g*/
-            const re = new RegExp(pattern_dataDeA,"g");
+            pattern_dataDeA =  qualificadores_entrada_especificos[x] + "\\s*([0-9]+\/*[0-9]*\/*[0-9]*).*" + qualificadores_saida_especificos[x] + "\\s*([0-9]+\/*[0-9]*\/*[0-9]*)";
+
+            const re = new RegExp(pattern_dataDeA);
 
             found = msg.match(re);
 
             if(found!==null){
                 
-                console.log(found);
+                entrada = found[1],
+                saida = found[2]
                 break;
 
             
@@ -67,14 +68,16 @@ const regexp = (msg) =>{
     
         for (x = 0; x < qualificadores_entrada.length; x++) {
 
-            pattern_horasI = "/" + qualificadores_entrada[x] + "(?:[A-z]*)\s*([0-9]+)\s" + qualificadores_saida[x] + "(?:[A-z]*)\s*([0-9]+)/g";
+            pattern_horasI =  `${qualificadores_entrada[x]}(?:[A-z]*)\\s*([0-9]+)\\s${qualificadores_saida[x]}(?:[A-z]*)\\s*([0-9]+)`;
 
-            found_h = msg.match(pattern_horasI)
+            const re2 = new RegExp(pattern_horasI);
 
-            if(found_h[1]!==undefined){
+            found_h = msg.match(re2)
+
+            if(found_h[1]!==undefined||found_h[1]!==""){
                 
-                hora_entrada = found_h[0];
-                hora_saida = found_h[1];
+                hora_entrada = found_h[1];
+                hora_saida = found_h[2];
                 break;
 
             
@@ -84,7 +87,7 @@ const regexp = (msg) =>{
         
     }
 
-    return "";
+    return [entrada, saida, hora_entrada, hora_saida];
 }
 
 module.exports = regexp;
