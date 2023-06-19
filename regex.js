@@ -86,8 +86,81 @@ const regexp = (msg) =>{
         }
         
     }
+    
 
-    return [entrada, saida, hora_entrada, hora_saida];
+    dts = [entrada, saida, hora_entrada, hora_saida];
 }
+
+const arrumaDatas =(str, str2)=>{
+    patt = /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{2,4}/;
+    patt2 = /[0-9]{1,2}\/[0-9]{1,2}/;
+
+    const today = new Date();
+    const hoje = today.getDate();
+    const ano = today.getFullYear();
+    const mesqvem = new Date(today.setMonth(today.getMonth()+1));
+
+    if(patt.test(str)){
+
+        const contex = new Date(troca(str));
+       
+    }else{
+        if(patt2.test(str)){
+            //patt2 x patt
+            if(patt.test(str2)){
+
+                const contex = new Date(troca(str2));
+
+            }else{
+                //patt2 x patt2
+                //patt2 x none
+
+                const contex = new Date(troca(str1 + "/" + ano));
+                if(contex<today){
+                    const contex = new Date(troca(str1 + "/" + mesqvem.getFullYear()));
+                }
+
+                
+                
+            }
+        }else{
+            //none x patt
+            if(patt.test(str2)){
+
+                const contex = new Date(troca(str2));
+
+            }else{
+                //none x patt2
+                if(patt2.test(str2)){
+
+                    const contex = new Date(troca(str2));
+                    if(contex<today){
+                        const contex = new Date(troca(str2 + "/" + mesqvem.getFullYear()));
+                    }
+
+                //none x none
+                }else{
+                    const contex = today;
+
+                }
+            }
+
+        }
+    }
+
+    
+
+}
+
+const troca = (str) => {
+
+    var a  = str.trim().split("/")
+    if(a.length > 2){
+        return a[1] + "/" + a[0] + "/" + a[2];
+    }else{
+        return a[1] + "/" + a[0];
+    }
+    
+};
 
 module.exports = regexp;
