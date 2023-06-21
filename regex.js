@@ -96,30 +96,89 @@ const arrumaDatas =(str, str2)=>{
     patt2 = /[0-9]{1,2}\/[0-9]{1,2}/;
 
     const today = new Date();
-    const hoje = today.getDate();
     const ano = today.getFullYear();
-    const mesqvem = new Date(today.setMonth(today.getMonth()+1));
+  
 
     if(patt.test(str)){
 
-        const contex = new Date(troca(str));
+        contex = new Date(troca(str));
+
+        //patt x patt
+        if(!patt.test(str2)){
+
+            //patt x patt2
+            if(patt2.test(str2)){
+
+                const ano_const = contex.getFullYear();
+                str2 = str2.trim() +"/" + ano_const;
+
+                const d1 = new Date(troca(str));
+                const d2 = new Date(troca(str2));
+                if(d1>d2){
+                    const today2 = contex;
+                    const mesqvem = new Date(today2.setMonth(today2.getMonth()+1));
+                    str2 = str2.trim() + "/" + mesqvem.getFullYear();
+                }
+
+            //patt x none    
+            }else{
+                const ano_const = contex.getFullYear();
+                const mes_const = contex.getMonth() + 1;
+                str2 = str2.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+
+                const d1 = new Date(troca(str));
+                const d2 = new Date(troca(str2));
+                if(d1>d2){
+                    const today2 = contex;
+                    const mesqvem = new Date(today2.setMonth(today2.getMonth()+1));
+                    str2 = str2.trim().substring(0,2) + "/" + (mesqvem.getMonth() + 1) + "/" + mesqvem.getFullYear();
+                }
+                
+
+            }
+
+        }
+        
        
     }else{
         if(patt2.test(str)){
             //patt2 x patt
             if(patt.test(str2)){
 
-                const contex = new Date(troca(str2));
+                contex = new Date(troca(str2));
+                const ano_const = contex.getFullYear();
+                str = str + "/" + ano_const;
+
+                const d1 = new Date(troca(str));
+                const d2 = new Date(troca(str2));
+                if(d1>d2){
+                    const today3 = contex;
+                    const mesanterior = new Date(today3.setMonth(today3.getMonth()-1));
+                    str2 = str2.trim().substring(0,2) + "/" + (mesanterior.getMonth() + 1) + "/" + mesanterior.getFullYear();
+                }
 
             }else{
                 //patt2 x patt2
                 //patt2 x none
 
-                const contex = new Date(troca(str1 + "/" + ano));
+                contex = new Date(troca(str + "/" + ano));
                 if(contex<today){
-                    const contex = new Date(troca(str1 + "/" + mesqvem.getFullYear()));
+                    const today2 = contex;
+                    const mesqvem = new Date(today2.setMonth(today2.getMonth()+1));
+                    contex = new Date(troca(str + "/" + mesqvem.getFullYear()));
                 }
+                const ano_const = contex.getFullYear();
+                const mes_const = contex.getMonth() + 1;
+                str = str.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+                str2 = str2.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
 
+                const d1 = new Date(troca(str));
+                const d2 = new Date(troca(str2));
+                if(d1>d2){
+                    const today2 = contex;
+                    const mesqvem = new Date(today2.setMonth(today2.getMonth()+1));
+                    str2 = str2.trim().substring(0,2) + "/" + (mesqvem.getMonth() + 1) + "/" + mesqvem.getFullYear();
+                }
                 
                 
             }
@@ -127,20 +186,58 @@ const arrumaDatas =(str, str2)=>{
             //none x patt
             if(patt.test(str2)){
 
-                const contex = new Date(troca(str2));
+                contex = new Date(troca(str2));
+                const ano_const = contex.getFullYear();
+                const mes_const = contex.getMonth() + 1;
+                str = str.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+
+                const d1 = new Date(troca(str));
+                const d2 = new Date(troca(str2));
+                if(d1>d2){
+                    const today3 = contex;
+                    const mesanterior = new Date(today3.setMonth(today3.getMonth()-1));
+                    str = str.trim().substring(0,2) + "/" + (mesanterior.getMonth() + 1) + "/" + mesanterior.getFullYear();
+                }
+                
 
             }else{
                 //none x patt2
                 if(patt2.test(str2)){
 
-                    const contex = new Date(troca(str2));
+                    contex = new Date(troca(str2 + "/" + ano));
                     if(contex<today){
-                        const contex = new Date(troca(str2 + "/" + mesqvem.getFullYear()));
+                        const today2 = contex;
+                        const mesqvem = new Date(today2.setMonth(today2.getMonth()+1));
+                        contex = new Date(troca(str2 + "/" + mesqvem.getFullYear()));
+                    }
+                    const ano_const = contex.getFullYear();
+                    const mes_const = contex.getMonth() + 1;
+                    str = str.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+                    str2 = str2.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+
+                    const d1 = new Date(troca(str));
+                    const d2 = new Date(troca(str2));
+                    if(d1>d2){
+                        const today3 = contex;
+                        const mesanterior = new Date(today3.setMonth(today3.getMonth()-1));
+                        str = str.trim().substring(0,2) + "/" + (mesanterior.getMonth() + 1) + "/" + mesanterior.getFullYear();
                     }
 
                 //none x none
                 }else{
-                    const contex = today;
+                    contex = today;
+                    const ano_const = contex.getFullYear();
+                    const mes_const = contex.getMonth() + 1;
+                    str = str.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+                    str2 = str2.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+
+                    const d1 = new Date(troca(str));
+                    const d2 = new Date(troca(str2));
+                    if(d1>d2){
+                        const today2 = contex;
+                        const mesqvem = new Date(today2.setMonth(today2.getMonth()+1));
+                        str2 = str2.trim().substring(0,2) + "/" + (mesqvem.getMonth() + 1) + "/" + mesqvem.getFullYear();
+                    }
 
                 }
             }
@@ -148,7 +245,7 @@ const arrumaDatas =(str, str2)=>{
         }
     }
 
-    
+    return [str, str2];
 
 }
 
