@@ -88,12 +88,14 @@ const regexp = (msg) =>{
     }
     
 
-    dts = [entrada, saida, hora_entrada, hora_saida];
+    dts = arrumaDatas(entrada, saida, hora_entrada, hora_saida);
+    return dts;
 }
 
-const arrumaDatas =(str, str2)=>{
+const arrumaDatas =(str, str2, str3, str4)=>{
     patt = /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{2,4}/;
     patt2 = /[0-9]{1,2}\/[0-9]{1,2}/;
+    patt_horas = /[0-9]{1,2}\:[0-9]{1,2}/;
 
     const today = new Date();
     const ano = today.getFullYear();
@@ -245,7 +247,25 @@ const arrumaDatas =(str, str2)=>{
         }
     }
 
-    return [str, str2];
+
+    //horas
+
+    if(!patt_horas .test(str3)){
+        
+        str3 = str3.replace(/[A-z\s]+/, "");
+        str3 = str3.padStart(2,0);
+        str3 = str3 + ":" + "00";
+    }
+
+    if(!patt_horas .test(str4)){
+        
+        str4 = str4.replace(/[A-z\s]+/, "");
+        str4 = str4.padStart(2,0);
+        str4 = str4 + ":" + "00";
+    }
+
+
+    return [str, str2, str3, str4];
 
 }
 
@@ -259,5 +279,65 @@ const troca = (str) => {
     }
     
 };
+
+
+function Dif(e) {
+    for (this.dias = 0; e >= 864e5; this.dias++,
+    e -= 864e5)
+        ;
+    for (this.horas = 0; e >= 36e5; this.horas++,
+    e -= 36e5)
+        ;
+    for (this.minutos = 0; e >= 6e4; this.minutos++,
+    e -= 6e4)
+        ;
+    this.preco = function(e) {
+        if (tp(e),
+        0 == this.dias)
+            t = ho(this.horas);
+        else
+            var t = valore_d(this.dias, this.horas);
+        return t
+    }
+}
+function tp(e) {
+    19 == e ? (tarifaS = 114.5,
+    tarifaD = 23.9,
+    tarifaH = 3,
+    prim_h = 4,
+    demais_h = 3,
+    tarifaM = 280,
+    tarifaMin = 21) : 14 == e ? (tarifaS = 98,
+    tarifaD = 15.9,
+    tarifaH = 3,
+    prim_h = 3.5,
+    demais_h = 2.5,
+    tarifaM = 240,
+    tarifaMin = 21) : (tarifaS = 0,
+    tarifaD = 0,
+    tarifaH = 0,
+    prim_h = 0,
+    demais_h = 0,
+    tarifaMin = 21)
+}
+function valore_d(e, t) {
+    var a = 0
+      , r = 0;
+    return e > 14 ? b = tarifaM : e >= 6 ? (t > 6 ? a = 1 : t > 0 && 7 > t && (r = prim_h + (t - 1) * demais_h),
+    b = tarifaS / 7 * (e + a) + r) : b = tarifaD * e + ho2(t),
+    b < tarifaMin ? b = tarifaMin : b = b,
+    tp(),
+    b
+}
+function ho(e) {
+    return b = 7 >= e ? prim_h + (e - 1) * demais_h : tarifaD,
+    b < tarifaMin ? b = tarifaMin : b = b,
+    tp(),
+    b
+}
+function ho2(e) {
+    return b = 6 >= e ? e * tarifaH : tarifaD,
+    b
+}
 
 module.exports = regexp;
