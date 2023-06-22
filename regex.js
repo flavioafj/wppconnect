@@ -7,10 +7,10 @@ const regexp = (msg) =>{
     let pattern_dataDeA = /de\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*\s*a\s*([0-9]+)\/*([0-9]+)*\/*([0-9]+)*/g;
     let pattern_horasI = /chega(?:[A-z]*)\s*([0-9]+)\ssai(?:[A-z]*)\s*([0-9]+)/g;
 
-    let qualificadores_entrada = ["chegada", "entra", "entrada", "entro", "cheg", "entr"];
-    let qualificadores_saida = ["saída", "sai", "saindo", "saio", "sai", "volt"];
-    let qualificadores_entrada_especificos = ["de", "dia", "de", "de", "do", "do", "do", "do", "dia", "dia"];
-    let qualificadores_saida_especificos = ["a", "ao", "à",  "até", "a", "ao", "à",  "até", "dia", "até"];
+    let qualificadores_entrada = ["chegada", "entra", "entrada", "entro", "cheg", "entr", "d?as", "às", "d?as"];
+    let qualificadores_saida = ["saída", "sai", "saindo", "saio", "sai", "volt", "as", "às", "às"];
+    let qualificadores_entrada_especificos = ["de", "dia", "de", "de", "do", "do", "do", "do", "dia", "dia", "dos?\\s+dias?"];
+    let qualificadores_saida_especificos = ["a", "ao", "à",  "até", "a", "ao", "à",  "até", "dia", "até", "a"];
     let entrada = "";
     let saida = "";
     let hora_entrada = "";
@@ -64,32 +64,39 @@ const regexp = (msg) =>{
     }
 
       /*2ª tentativa - horas*/
-    if(hora_entrada===undefined||hora_saida===undefined){
+    if(hora_entrada===undefined||hora_saida===undefined||hora_entrada===""||hora_saida===""){
     
         for (x = 0; x < qualificadores_entrada.length; x++) {
 
-            pattern_horasI =  `${qualificadores_entrada[x]}(?:[A-z]*)\\s*([0-9]+)\\s${qualificadores_saida[x]}(?:[A-z]*)\\s*([0-9]+)`;
+            pattern_horasI =  `${qualificadores_entrada[x]}(?:[A-z]*)\\s*([0-9]+).*${qualificadores_saida[x]}(?:[A-z]*)\\s*([0-9]+)`;
 
             const re2 = new RegExp(pattern_horasI);
 
-            found_h = msg.match(re2)
+            found_h = msg.match(re2);
 
-            if(found_h[1]!==undefined||found_h[1]!==""){
+            if (found_h!==null) {
+                if(found_h[1]!==undefined||found_h[1]!==""||found_h[2]!==undefined||found_h[2]!==""){
+                    
+                    hora_entrada = found_h[1];
+                    hora_saida = found_h[2];
+                    break;
+    
                 
-                hora_entrada = found_h[1];
-                hora_saida = found_h[2];
-                break;
-
-            
+                }
             }
         
         }
         
     }
     
-
+    //dts fornece entrada e saída dd/mm/aaa e hora_entrada e hora_saida hh:mm
     dts = arrumaDatas(entrada, saida, hora_entrada, hora_saida);
-    return dts;
+   
+
+    var d1 = new Date(troca(dts[0] + " " + dts[2]));
+    var d2 = new Date(troca(dts[1] + " " + dts[3]));
+    var pr = new Dif(d2-d1);
+    return "O preço para estacionar no seguinte período:\n\nEntrada: " + dts[0] + " " + dts[2] + "\nSaída: "+ dts[1] + " " + dts[3] + "\n\n" + pr.dias + " dia(s), " + pr.horas + " hora(s)" + "\n\nSeria:\n\nVaga coberta: R$ " + pr.preco(19) + "\nVaga descoberta: R$ " + pr.preco(14);
 }
 
 const arrumaDatas =(str, str2, str3, str4)=>{

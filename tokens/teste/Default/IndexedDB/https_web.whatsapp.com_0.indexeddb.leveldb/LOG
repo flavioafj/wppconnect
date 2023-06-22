@@ -1,49 +1,38 @@
-2023/06/15-19:54:30.801 3164 Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/06/15-19:54:30.802 3164 Recovering log #1085
-2023/06/15-19:54:30.832 3164 Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001085.log 
-2023/06/15-19:54:30.833 3164 Delete type=2 #1072
-2023/06/15-19:54:30.833 3164 Delete type=2 #1073
-2023/06/15-19:54:30.833 3164 Delete type=2 #1074
-2023/06/15-19:54:30.833 3164 Delete type=2 #1075
-2023/06/15-19:54:30.833 3164 Delete type=2 #1076
-2023/06/15-19:54:30.833 3164 Delete type=2 #1077
-2023/06/15-19:54:30.833 3164 Delete type=2 #1078
-2023/06/15-19:54:30.833 3164 Delete type=2 #1079
-2023/06/15-19:54:30.833 3164 Delete type=2 #1080
-2023/06/15-19:54:30.833 3164 Delete type=2 #1081
-2023/06/15-19:54:30.833 3164 Delete type=2 #1087
-2023/06/15-19:55:48.165 3164 Level-0 table #1102: started
-2023/06/15-19:55:48.199 3164 Level-0 table #1102: 1180827 bytes OK
-2023/06/15-19:55:48.201 3164 Delete type=0 #1085
-2023/06/15-19:55:58.524 3164 Compacting 1@0 + 1@1 files
-2023/06/15-19:55:58.578 3164 Generated table #1103@0: 25645 keys, 501135 bytes
-2023/06/15-19:55:58.584 3164 Generated table #1104@0: 3536 keys, 60847 bytes
-2023/06/15-19:55:58.584 3164 Compacted 1@0 + 1@1 files => 561982 bytes
-2023/06/15-19:55:58.585 3164 compacted to: files[ 0 2 13 0 0 0 0 ]
-2023/06/15-19:55:58.585 3164 Delete type=2 #1088
-2023/06/15-19:55:58.585 3164 Delete type=2 #1102
-2023/06/15-19:56:43.167 3164 Compacting 1@1 + 10@2 files
-2023/06/15-19:56:43.269 3164 Generated table #1105@1: 40724 keys, 2242732 bytes
-2023/06/15-19:56:43.312 3164 Generated table #1106@1: 3269 keys, 2153502 bytes
-2023/06/15-19:56:43.352 3164 Generated table #1107@1: 2893 keys, 2152459 bytes
-2023/06/15-19:56:43.537 3164 Generated table #1108@1: 28041 keys, 2236900 bytes
-2023/06/15-19:56:43.620 3164 Generated table #1109@1: 11088 keys, 2152595 bytes
-2023/06/15-19:56:43.699 3164 Generated table #1110@1: 3393 keys, 2123963 bytes
-2023/06/15-19:56:43.800 3164 Generated table #1111@1: 82597 keys, 2225986 bytes
-2023/06/15-19:56:43.939 3164 Generated table #1112@1: 95820 keys, 2243739 bytes
-2023/06/15-19:56:44.082 3164 Generated table #1113@1: 96637 keys, 2245313 bytes
-2023/06/15-19:56:44.188 3164 Generated table #1114@1: 96309 keys, 2245515 bytes
-2023/06/15-19:56:44.192 3164 Generated table #1115@1: 858 keys, 20388 bytes
-2023/06/15-19:56:44.192 3164 Compacted 1@1 + 10@2 files => 22043092 bytes
-2023/06/15-19:56:44.193 3164 compacted to: files[ 0 1 14 0 0 0 0 ]
-2023/06/15-19:56:44.194 3164 Delete type=2 #1089
-2023/06/15-19:56:44.194 3164 Delete type=2 #1090
-2023/06/15-19:56:44.194 3164 Delete type=2 #1091
-2023/06/15-19:56:44.194 3164 Delete type=2 #1092
-2023/06/15-19:56:44.194 3164 Delete type=2 #1093
-2023/06/15-19:56:44.194 3164 Delete type=2 #1094
-2023/06/15-19:56:44.194 3164 Delete type=2 #1095
-2023/06/15-19:56:44.194 3164 Delete type=2 #1096
-2023/06/15-19:56:44.194 3164 Delete type=2 #1097
-2023/06/15-19:56:44.194 3164 Delete type=2 #1098
-2023/06/15-19:56:44.194 3164 Delete type=2 #1103
+2023/06/22-17:47:53.665 3c6c Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/22-17:47:53.666 3c6c Recovering log #2179
+2023/06/22-17:47:53.710 3c6c Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/002179.log 
+2023/06/22-17:49:01.381 3c6c Level-0 table #2196: started
+2023/06/22-17:49:01.428 3c6c Level-0 table #2196: 1068384 bytes OK
+2023/06/22-17:49:01.431 3c6c Delete type=0 #2179
+2023/06/22-17:49:07.099 3c6c Compacting 1@0 + 1@1 files
+2023/06/22-17:49:07.141 3c6c Generated table #2197@0: 30716 keys, 526526 bytes
+2023/06/22-17:49:07.145 3c6c Generated table #2198@0: 664 keys, 10795 bytes
+2023/06/22-17:49:07.145 3c6c Compacted 1@0 + 1@1 files => 537321 bytes
+2023/06/22-17:49:07.147 3c6c compacted to: files[ 0 2 12 0 0 0 0 ]
+2023/06/22-17:49:07.147 3c6c Delete type=2 #2182
+2023/06/22-17:49:07.147 3c6c Delete type=2 #2196
+2023/06/22-17:49:14.988 43b4 Compacting 1@1 + 10@2 files
+2023/06/22-17:49:15.098 43b4 Generated table #2199@1: 36085 keys, 2223086 bytes
+2023/06/22-17:49:15.156 43b4 Generated table #2200@1: 3407 keys, 2155297 bytes
+2023/06/22-17:49:15.210 43b4 Generated table #2201@1: 2870 keys, 2151919 bytes
+2023/06/22-17:49:15.319 43b4 Generated table #2202@1: 30414 keys, 2248380 bytes
+2023/06/22-17:49:15.386 43b4 Generated table #2203@1: 8004 keys, 2137093 bytes
+2023/06/22-17:49:15.445 43b4 Generated table #2204@1: 22641 keys, 2149688 bytes
+2023/06/22-17:49:15.546 43b4 Generated table #2205@1: 94261 keys, 2241430 bytes
+2023/06/22-17:49:15.655 43b4 Generated table #2206@1: 94777 keys, 2243598 bytes
+2023/06/22-17:49:15.752 43b4 Generated table #2207@1: 94749 keys, 2242218 bytes
+2023/06/22-17:49:15.981 43b4 Generated table #2208@1: 94345 keys, 2243069 bytes
+2023/06/22-17:49:15.998 43b4 Generated table #2209@1: 8782 keys, 214373 bytes
+2023/06/22-17:49:15.998 43b4 Compacted 1@1 + 10@2 files => 22250151 bytes
+2023/06/22-17:49:16.000 43b4 compacted to: files[ 0 1 13 0 0 0 0 ]
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2183
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2184
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2185
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2186
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2187
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2188
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2189
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2190
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2191
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2192
+2023/06/22-17:49:16.000 43b4 Delete type=2 #2197
