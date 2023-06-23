@@ -1,5 +1,5 @@
 
-const regexp = (msg) =>{
+const regexp = (de, msg) =>{
 
     
     let pattern_data = /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{2,4}|[0-9]{1,2}\/[0-9]{1,2}/g;
@@ -34,7 +34,7 @@ const regexp = (msg) =>{
 
             pattern_dataDeA =  qualificadores_entrada_especificos[x] + "\\s*([0-9]+\/*[0-9]*\/*[0-9]*).*" + qualificadores_saida_especificos[x] + "\\s*([0-9]+\/*[0-9]*\/*[0-9]*)";
 
-            const re = new RegExp(pattern_dataDeA);
+            const re = new RegExp(pattern_dataDeA, "i");
 
             found = msg.match(re);
 
@@ -91,12 +91,13 @@ const regexp = (msg) =>{
     
     //dts fornece entrada e saída dd/mm/aaa e hora_entrada e hora_saida hh:mm
     dts = arrumaDatas(entrada, saida, hora_entrada, hora_saida);
-   
+
+    escreveArquivo(de, dts[0], dts[1], dts[2], dts[3]);
 
     var d1 = new Date(troca(dts[0] + " " + dts[2]));
     var d2 = new Date(troca(dts[1] + " " + dts[3]));
     var pr = new Dif(d2-d1);
-    return "O preço para estacionar no seguinte período:\n\nEntrada: " + dts[0] + " " + dts[2] + "\nSaída: "+ dts[1] + " " + dts[3] + "\n\n" + pr.dias + " dia(s), " + pr.horas + " hora(s)" + "\n\nSeria:\n\nVaga coberta: R$ " + pr.preco(19) + "\nVaga descoberta: R$ " + pr.preco(14);
+    return "O preço para estacionar no seguinte período:\n\nEntrada: " + dts[0] + " " + dts[2] + "\nSaída: "+ dts[1] + " " + dts[3] + "\n\n" + pr.dias + " dia(s), " + pr.horas + " hora(s)" + "\n\nSeria:\n\nVaga coberta: " + pr.preco(19).toLocaleString("pt-BR", {style:"currency", currency:"BRL"}) + "\nVaga descoberta: " + pr.preco(14).toLocaleString("pt-BR", {style:"currency", currency:"BRL"});
 }
 
 const arrumaDatas =(str, str2, str3, str4)=>{
@@ -345,6 +346,14 @@ function ho(e) {
 function ho2(e) {
     return b = 6 >= e ? e * tarifaH : tarifaD,
     b
+}
+
+const escreveArquivo = (a, b, c, d, e) => {
+    var fs = require('fs');
+    fs.appendFile('consultas.txt', a + '\t' + b + '\t' + c + '\t' + d + '\t' + e + '\r\n', function (err) {
+    if (err) throw err;
+       
+      });
 }
 
 module.exports = regexp;

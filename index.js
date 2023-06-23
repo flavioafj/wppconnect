@@ -88,7 +88,7 @@ function start(client) {
     //if nothing happen the message will be assesed here
 
     client
-      .sendText(message.from, consulta_preco(message.body))
+      .sendText(message.from, consulta_preco(message.from, message.body))
       .then((result) => {
         console.log('Result: ', result); //return object success
       })

@@ -1,4 +1,3 @@
-2023/06/22-17:36:20.814 3174 Creating DB C:\Users\Cliente\wppconnect\tokens\teste\Default\File System\Origins since it was missing.
-2023/06/22-17:36:20.822 3174 Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\File System\Origins/MANIFEST-000001
-2023/06/22-17:36:20.824 3174 Recovering log #3
-2023/06/22-17:36:20.824 3174 Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\File System\Origins/000003.log 
+2023/06/23-11:37:47.930 342c Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\File System\Origins/MANIFEST-000001
+2023/06/23-11:37:47.931 342c Recovering log #3
+2023/06/23-11:37:47.931 342c Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\File System\Origins/000003.log 

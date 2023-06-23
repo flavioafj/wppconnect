@@ -1,38 +1,54 @@
-2023/06/22-17:47:53.665 3c6c Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/06/22-17:47:53.666 3c6c Recovering log #2179
-2023/06/22-17:47:53.710 3c6c Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/002179.log 
-2023/06/22-17:49:01.381 3c6c Level-0 table #2196: started
-2023/06/22-17:49:01.428 3c6c Level-0 table #2196: 1068384 bytes OK
-2023/06/22-17:49:01.431 3c6c Delete type=0 #2179
-2023/06/22-17:49:07.099 3c6c Compacting 1@0 + 1@1 files
-2023/06/22-17:49:07.141 3c6c Generated table #2197@0: 30716 keys, 526526 bytes
-2023/06/22-17:49:07.145 3c6c Generated table #2198@0: 664 keys, 10795 bytes
-2023/06/22-17:49:07.145 3c6c Compacted 1@0 + 1@1 files => 537321 bytes
-2023/06/22-17:49:07.147 3c6c compacted to: files[ 0 2 12 0 0 0 0 ]
-2023/06/22-17:49:07.147 3c6c Delete type=2 #2182
-2023/06/22-17:49:07.147 3c6c Delete type=2 #2196
-2023/06/22-17:49:14.988 43b4 Compacting 1@1 + 10@2 files
-2023/06/22-17:49:15.098 43b4 Generated table #2199@1: 36085 keys, 2223086 bytes
-2023/06/22-17:49:15.156 43b4 Generated table #2200@1: 3407 keys, 2155297 bytes
-2023/06/22-17:49:15.210 43b4 Generated table #2201@1: 2870 keys, 2151919 bytes
-2023/06/22-17:49:15.319 43b4 Generated table #2202@1: 30414 keys, 2248380 bytes
-2023/06/22-17:49:15.386 43b4 Generated table #2203@1: 8004 keys, 2137093 bytes
-2023/06/22-17:49:15.445 43b4 Generated table #2204@1: 22641 keys, 2149688 bytes
-2023/06/22-17:49:15.546 43b4 Generated table #2205@1: 94261 keys, 2241430 bytes
-2023/06/22-17:49:15.655 43b4 Generated table #2206@1: 94777 keys, 2243598 bytes
-2023/06/22-17:49:15.752 43b4 Generated table #2207@1: 94749 keys, 2242218 bytes
-2023/06/22-17:49:15.981 43b4 Generated table #2208@1: 94345 keys, 2243069 bytes
-2023/06/22-17:49:15.998 43b4 Generated table #2209@1: 8782 keys, 214373 bytes
-2023/06/22-17:49:15.998 43b4 Compacted 1@1 + 10@2 files => 22250151 bytes
-2023/06/22-17:49:16.000 43b4 compacted to: files[ 0 1 13 0 0 0 0 ]
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2183
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2184
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2185
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2186
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2187
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2188
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2189
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2190
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2191
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2192
-2023/06/22-17:49:16.000 43b4 Delete type=2 #2197
+2023/06/23-15:07:24.551 459c Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/23-15:07:24.552 459c Recovering log #2276
+2023/06/23-15:07:24.558 459c Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/002276.log 
+2023/06/23-15:07:40.926 459c Compacting 1@1 + 4@2 files
+2023/06/23-15:07:40.991 459c Generated table #2292@1: 59186 keys, 1436757 bytes
+2023/06/23-15:07:40.991 459c Compacted 1@1 + 4@2 files => 1436757 bytes
+2023/06/23-15:07:40.993 459c compacted to: files[ 0 0 13 0 0 0 0 ]
+2023/06/23-15:07:40.993 459c Delete type=2 #2225
+2023/06/23-15:07:40.993 459c Delete type=2 #2226
+2023/06/23-15:07:40.993 459c Delete type=2 #2242
+2023/06/23-15:07:40.994 459c Delete type=2 #2258
+2023/06/23-15:07:40.994 459c Delete type=2 #2279
+2023/06/23-15:07:44.842 459c Level-0 table #2294: started
+2023/06/23-15:07:44.879 459c Level-0 table #2294: 1198769 bytes OK
+2023/06/23-15:07:44.880 459c Delete type=0 #2276
+2023/06/23-15:07:44.912 459c Compacting 1@0 + 0@1 files
+2023/06/23-15:07:44.943 459c Generated table #2295@0: 24464 keys, 538263 bytes
+2023/06/23-15:07:44.946 459c Generated table #2296@0: 357 keys, 5544 bytes
+2023/06/23-15:07:44.946 459c Compacted 1@0 + 0@1 files => 543807 bytes
+2023/06/23-15:07:44.947 459c compacted to: files[ 0 2 13 0 0 0 0 ]
+2023/06/23-15:07:44.948 459c Delete type=2 #2294
+2023/06/23-15:08:09.301 3c58 Compacting 1@1 + 10@2 files
+2023/06/23-15:08:09.406 3c58 Generated table #2297@1: 54676 keys, 2244717 bytes
+2023/06/23-15:08:09.486 3c58 Generated table #2298@1: 3790 keys, 2157711 bytes
+2023/06/23-15:08:09.556 3c58 Generated table #2299@1: 2823 keys, 2151848 bytes
+2023/06/23-15:08:09.631 3c58 Generated table #2300@1: 23383 keys, 2220058 bytes
+2023/06/23-15:08:09.699 3c58 Generated table #2301@1: 15757 keys, 2175410 bytes
+2023/06/23-15:08:09.751 3c58 Generated table #2302@1: 3658 keys, 2124824 bytes
+2023/06/23-15:08:09.841 3c58 Generated table #2303@1: 83578 keys, 2228135 bytes
+2023/06/23-15:08:09.938 3c58 Generated table #2304@1: 94485 keys, 2242869 bytes
+2023/06/23-15:08:10.068 3c58 Generated table #2305@1: 94744 keys, 2242943 bytes
+2023/06/23-15:08:10.524 3c58 Generated table #2306@1: 94550 keys, 2243127 bytes
+2023/06/23-15:08:10.548 3c58 Generated table #2307@1: 9758 keys, 225413 bytes
+2023/06/23-15:08:10.548 3c58 Compacted 1@1 + 10@2 files => 22257055 bytes
+2023/06/23-15:08:10.550 3c58 compacted to: files[ 0 1 14 0 0 0 0 ]
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2280
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2281
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2282
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2283
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2284
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2285
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2286
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2287
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2288
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2289
+2023/06/23-15:08:10.551 3c58 Delete type=2 #2295
+2023/06/23-15:19:07.514 3c58 Compacting 1@1 + 3@2 files
+2023/06/23-15:19:07.662 3c58 Generated table #2308@1: 68611 keys, 1658546 bytes
+2023/06/23-15:19:07.663 3c58 Compacted 1@1 + 3@2 files => 1658546 bytes
+2023/06/23-15:19:07.664 3c58 compacted to: files[ 0 0 12 0 0 0 0 ]
+2023/06/23-15:19:07.664 3c58 Delete type=2 #2274
+2023/06/23-15:19:07.664 3c58 Delete type=2 #2290
+2023/06/23-15:19:07.664 3c58 Delete type=2 #2292
+2023/06/23-15:19:07.664 3c58 Delete type=2 #2296
