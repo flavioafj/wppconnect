@@ -31,7 +31,7 @@ function start(client) {
     console.log(message.body);
     if (message.body === '1'||message.body === '3'||message.body === '4'||message.body === '5') {
       client
-        .sendText(message.from, resposta(message.body))
+        .sendText(message.from, resposta.answer(message.body))
         .then((result) => {
           console.log('Result: ', result); //return object success
         })
@@ -42,7 +42,7 @@ function start(client) {
     if (message.body === '2') {
       
       client
-        .sendText(message.from, resposta(message.body))
+        .sendText(message.from, resposta.answer(message.body))
         .then((result) => {
           console.log('Result: ', result); //return object success
         })
@@ -62,7 +62,7 @@ function start(client) {
     if (message.body === '6') {
     
       client
-        .sendText(message.from, resposta(message.body))
+        .sendText(message.from, resposta.answer(message.body))
         .then((result) => {
           console.log('Result: ', result); //return object success
         })
@@ -86,17 +86,19 @@ function start(client) {
     }
 
     //if nothing happen the message will be assesed here
-
-    client
-      .sendText(message.from, consulta_preco(message.from, message.body))
-      .then((result) => {
-        console.log('Result: ', result); //return object success
-      })
-      .catch((erro) => {
-        console.error('Error when sending: ', erro); //return object error
-      });
-
+    if (resposta.asses(message.body)) {
+      client
+        .sendText(message.from, consulta_preco(message.from, message.body))
+        .then((result) => {
+          console.log('Result: ', result); //return object success
+        })
+        .catch((erro) => {
+          console.error('Error when sending: ', erro); //return object error
+        });
+    }
   });
+
+
 }
 
 module.exports = {

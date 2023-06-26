@@ -179,15 +179,15 @@ const arrumaDatas =(str, str2, str3, str4)=>{
                 }
                 const ano_const = contex.getFullYear();
                 const mes_const = contex.getMonth() + 1;
-                str = str.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
-                str2 = str2.trim().substring(0,2) + "/" + mes_const + "/" + ano_const;
+                str = str.split("/")[0] + "/" + mes_const + "/" + ano_const;
+                str2 = str2.split("/")[0] + "/" + mes_const + "/" + ano_const;
 
                 const d1 = new Date(troca(str));
                 const d2 = new Date(troca(str2));
                 if(d1>d2){
                     const today2 = contex;
                     const mesqvem = new Date(today2.setMonth(today2.getMonth()+1));
-                    str2 = str2.trim().substring(0,2) + "/" + (mesqvem.getMonth() + 1) + "/" + mesqvem.getFullYear();
+                    str2 = str2.split("/")[0] + "/" + (mesqvem.getMonth() + 1) + "/" + mesqvem.getFullYear();
                 }
                 
                 
