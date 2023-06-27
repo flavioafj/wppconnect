@@ -97,8 +97,16 @@ const regexp = (de, msg) =>{
     var d1 = new Date(troca(dts[0] + " " + dts[2]));
     var d2 = new Date(troca(dts[1] + " " + dts[3]));
     var pr = new Dif(d2-d1);
-    return "O preço para estacionar no seguinte período:\n\nEntrada: " + dts[0] + " " + dts[2] + "\nSaída: "+ dts[1] + " " + dts[3] + "\n\n" + pr.dias + " dia(s), " + pr.horas + " hora(s)" + "\n\nSeria:\n\nVaga coberta: " + pr.preco(19).toLocaleString("pt-BR", {style:"currency", currency:"BRL"}) + "\nVaga descoberta: " + pr.preco(14).toLocaleString("pt-BR", {style:"currency", currency:"BRL"});
-}
+        if(entrada!=""&&saida!=""){
+
+            return "O preço para estacionar no seguinte período:\n\nEntrada: " + dts[0] + " " + dts[2] + "\nSaída: "+ dts[1] + " " + dts[3] + "\n\n" + pr.dias + " dia(s), " + pr.horas + " hora(s)" + "\n\nSeria:\n\nVaga coberta: " + pr.preco(19).toLocaleString("pt-BR", {style:"currency", currency:"BRL"}) + "\nVaga descoberta: " + pr.preco(14).toLocaleString("pt-BR", {style:"currency", currency:"BRL"});
+
+        }else{
+
+            return;
+
+        }
+    }
 
 const arrumaDatas =(str, str2, str3, str4)=>{
     patt = /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{2,4}/;
@@ -351,7 +359,7 @@ function ho2(e) {
 const escreveArquivo = (a, b, c, d, e) => {
     var fs = require('fs');
     const f = new Date();
-    fs.appendFile('consultas.txt', a + '\t' + b + '\t' + c + '\t' + d + '\t' + e + '\t' + f.getDate.toLocaleString("pt-BR") + '\r\n', function (err) {
+    fs.appendFile('consultas.txt', a + '\t' + b + '\t' + c + '\t' + d + '\t' + e + '\t' + f.toLocaleString("pt-BR") + '\r\n', function (err) {
     if (err) throw err;
        
       });
