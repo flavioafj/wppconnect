@@ -1,27 +1,102 @@
-2023/06/26-11:44:50.476 4740 Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/06/26-11:44:50.477 4740 Recovering log #2453
-2023/06/26-11:44:50.493 4740 Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/002453.log 
-2023/06/26-11:44:50.494 4740 Delete type=2 #2441
-2023/06/26-11:44:50.494 4740 Delete type=2 #2442
-2023/06/26-11:44:50.494 4740 Delete type=2 #2443
-2023/06/26-11:44:50.494 4740 Delete type=2 #2444
-2023/06/26-11:44:50.494 4740 Delete type=2 #2445
-2023/06/26-11:44:50.494 4740 Delete type=2 #2446
-2023/06/26-11:44:50.494 4740 Delete type=2 #2447
-2023/06/26-11:44:50.494 4740 Delete type=2 #2448
-2023/06/26-11:44:50.494 4740 Delete type=2 #2449
-2023/06/26-11:44:50.494 4740 Delete type=2 #2450
-2023/06/26-11:44:50.494 4740 Delete type=2 #2455
-2023/06/26-11:46:32.168 4740 Compacting 1@1 + 7@2 files
-2023/06/26-11:46:32.280 4740 Generated table #2469@1: 94378 keys, 2242858 bytes
-2023/06/26-11:46:32.414 4740 Generated table #2470@1: 79195 keys, 1907923 bytes
-2023/06/26-11:46:32.414 4740 Compacted 1@1 + 7@2 files => 4150781 bytes
-2023/06/26-11:46:32.416 4740 compacted to: files[ 0 0 14 0 0 0 0 ]
-2023/06/26-11:46:32.416 4740 Delete type=2 #2372
-2023/06/26-11:46:32.416 4740 Delete type=2 #2373
-2023/06/26-11:46:32.416 4740 Delete type=2 #2374
-2023/06/26-11:46:32.416 4740 Delete type=2 #2389
-2023/06/26-11:46:32.416 4740 Delete type=2 #2404
-2023/06/26-11:46:32.416 4740 Delete type=2 #2419
-2023/06/26-11:46:32.416 4740 Delete type=2 #2435
-2023/06/26-11:46:32.416 4740 Delete type=2 #2456
+2023/06/27-10:55:00.204 33f4 Reusing MANIFEST C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/27-10:55:00.205 33f4 Recovering log #2453
+2023/06/27-10:55:00.270 33f4 Reusing old log C:\Users\Cliente\wppconnect\tokens\teste\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/002453.log 
+2023/06/27-10:55:10.966 42f4 Level-0 table #2473: started
+2023/06/27-10:55:11.012 42f4 Level-0 table #2473: 1226245 bytes OK
+2023/06/27-10:55:11.015 42f4 Delete type=0 #2453
+2023/06/27-10:55:11.937 42f4 Compacting 1@0 + 0@1 files
+2023/06/27-10:55:11.973 42f4 Generated table #2474@0: 23632 keys, 477593 bytes
+2023/06/27-10:55:11.976 42f4 Generated table #2475@0: 309 keys, 4568 bytes
+2023/06/27-10:55:11.976 42f4 Compacted 1@0 + 0@1 files => 482161 bytes
+2023/06/27-10:55:11.978 42f4 compacted to: files[ 0 2 14 0 0 0 0 ]
+2023/06/27-10:55:11.981 42f4 Compacting 1@1 + 10@2 files
+2023/06/27-10:55:12.212 42f4 Generated table #2476@1: 66206 keys, 2263886 bytes
+2023/06/27-10:55:12.287 42f4 Generated table #2477@1: 18708 keys, 2180665 bytes
+2023/06/27-10:55:12.339 42f4 Generated table #2478@1: 2690 keys, 2147539 bytes
+2023/06/27-10:55:12.394 42f4 Generated table #2479@1: 10253 keys, 2162929 bytes
+2023/06/27-10:55:12.489 42f4 Generated table #2480@1: 30088 keys, 2256870 bytes
+2023/06/27-10:55:12.542 42f4 Generated table #2481@1: 6468 keys, 2128695 bytes
+2023/06/27-10:55:12.601 42f4 Generated table #2482@1: 11287 keys, 2132425 bytes
+2023/06/27-10:55:12.707 42f4 Generated table #2483@1: 95889 keys, 2244647 bytes
+2023/06/27-10:55:12.824 42f4 Generated table #2484@1: 94364 keys, 2243055 bytes
+2023/06/27-10:55:12.968 42f4 Generated table #2485@1: 94477 keys, 2241670 bytes
+2023/06/27-10:55:12.976 42f4 Generated table #2486@1: 5011 keys, 121768 bytes
+2023/06/27-10:55:12.976 42f4 Compacted 1@1 + 10@2 files => 22124149 bytes
+2023/06/27-10:55:12.977 42f4 compacted to: files[ 0 1 15 0 0 0 0 ]
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2457
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2458
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2459
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2460
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2461
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2462
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2463
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2464
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2465
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2466
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2473
+2023/06/27-10:55:12.978 42f4 Delete type=2 #2474
+2023/06/27-10:55:17.109 1294 Level-0 table #2488: started
+2023/06/27-10:55:17.151 1294 Level-0 table #2488: 1227124 bytes OK
+2023/06/27-10:55:17.152 1294 Delete type=0 #2472
+2023/06/27-10:55:17.487 1294 Compacting 1@1 + 6@2 files
+2023/06/27-10:55:17.587 1294 Generated table #2489@1: 66733 keys, 2262563 bytes
+2023/06/27-10:55:17.676 1294 Generated table #2490@1: 20976 keys, 2181090 bytes
+2023/06/27-10:55:17.751 1294 Generated table #2491@1: 2843 keys, 2151592 bytes
+2023/06/27-10:55:18.488 1294 Generated table #2492@1: 5717 keys, 2155227 bytes
+2023/06/27-10:55:18.606 1294 Generated table #2493@1: 31179 keys, 2256849 bytes
+2023/06/27-10:55:18.664 1294 Generated table #2494@1: 10363 keys, 2141052 bytes
+2023/06/27-10:55:18.674 1294 Generated table #2495@1: 552 keys, 292241 bytes
+2023/06/27-10:55:18.674 1294 Compacted 1@1 + 6@2 files => 13440614 bytes
+2023/06/27-10:55:18.676 1294 compacted to: files[ 0 1 16 0 0 0 0 ]
+2023/06/27-10:55:19.446 42f4 Compacting 1@1 + 4@2 files
+2023/06/27-10:55:19.628 42f4 Generated table #2496@1: 94622 keys, 2243978 bytes
+2023/06/27-10:55:19.715 42f4 Generated table #2497@1: 82852 keys, 1993463 bytes
+2023/06/27-10:55:19.715 42f4 Compacted 1@1 + 4@2 files => 4237441 bytes
+2023/06/27-10:55:19.717 42f4 compacted to: files[ 0 0 14 0 0 0 0 ]
+2023/06/27-10:55:19.717 42f4 Delete type=2 #2476
+2023/06/27-10:55:19.717 42f4 Delete type=2 #2477
+2023/06/27-10:55:19.717 42f4 Delete type=2 #2478
+2023/06/27-10:55:19.717 42f4 Delete type=2 #2479
+2023/06/27-10:55:19.717 42f4 Delete type=2 #2480
+2023/06/27-10:55:19.717 42f4 Delete type=2 #2481
+2023/06/27-10:55:19.717 42f4 Delete type=2 #2488
+2023/06/27-10:59:32.469 42f4 Level-0 table #2499: started
+2023/06/27-10:59:32.591 42f4 Level-0 table #2499: 1270979 bytes OK
+2023/06/27-10:59:32.595 42f4 Delete type=2 #2451
+2023/06/27-10:59:32.595 42f4 Delete type=2 #2467
+2023/06/27-10:59:32.596 42f4 Delete type=2 #2469
+2023/06/27-10:59:32.596 42f4 Delete type=2 #2470
+2023/06/27-10:59:32.596 42f4 Delete type=2 #2475
+2023/06/27-10:59:32.596 42f4 Delete type=0 #2487
+2023/06/27-10:59:32.738 42f4 Compacting 1@0 + 0@1 files
+2023/06/27-10:59:33.178 42f4 Generated table #2500@0: 24949 keys, 510823 bytes
+2023/06/27-10:59:33.217 42f4 Generated table #2501@0: 2938 keys, 50494 bytes
+2023/06/27-10:59:33.217 42f4 Compacted 1@0 + 0@1 files => 561317 bytes
+2023/06/27-10:59:33.218 42f4 compacted to: files[ 0 2 14 0 0 0 0 ]
+2023/06/27-10:59:33.219 42f4 Delete type=2 #2499
+2023/06/27-10:59:35.715 42f4 Compacting 1@1 + 11@2 files
+2023/06/27-10:59:36.139 42f4 Generated table #2502@1: 67642 keys, 2264128 bytes
+2023/06/27-10:59:36.448 42f4 Generated table #2503@1: 21131 keys, 2184010 bytes
+2023/06/27-10:59:37.102 42f4 Generated table #2504@1: 2834 keys, 2147824 bytes
+2023/06/27-10:59:37.179 42f4 Generated table #2505@1: 5111 keys, 2154738 bytes
+2023/06/27-10:59:37.314 42f4 Generated table #2506@1: 31426 keys, 2255644 bytes
+2023/06/27-10:59:37.413 42f4 Generated table #2507@1: 10627 keys, 2144215 bytes
+2023/06/27-10:59:37.511 42f4 Generated table #2508@1: 3636 keys, 2124579 bytes
+2023/06/27-10:59:37.677 42f4 Generated table #2509@1: 88022 keys, 2233973 bytes
+2023/06/27-10:59:37.847 42f4 Generated table #2510@1: 93737 keys, 2240334 bytes
+2023/06/27-10:59:37.974 42f4 Generated table #2511@1: 94702 keys, 2243830 bytes
+2023/06/27-10:59:38.008 42f4 Generated table #2512@1: 21054 keys, 496471 bytes
+2023/06/27-10:59:38.008 42f4 Compacted 1@1 + 11@2 files => 22489746 bytes
+2023/06/27-10:59:38.010 42f4 compacted to: files[ 0 1 14 0 0 0 0 ]
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2482
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2483
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2484
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2485
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2489
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2490
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2491
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2492
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2493
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2494
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2495
+2023/06/27-10:59:38.010 42f4 Delete type=2 #2500

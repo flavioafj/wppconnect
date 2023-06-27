@@ -4,7 +4,8 @@
   "description": "wpp",
   "main": "index.js",
   "dependencies": {
-    "@wppconnect-team/wppconnect": "^1.23.0"
+    "@wppconnect-team/wppconnect": "https://github.com/wppconnect-team/wppconnect/releases/download/nightly/wppconnect-nightly.tgz",
+    "puppeteer": "^20.7.3"
   },
   "devDependencies": {},
   "scripts": {

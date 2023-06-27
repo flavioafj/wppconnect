@@ -350,7 +350,8 @@ function ho2(e) {
 
 const escreveArquivo = (a, b, c, d, e) => {
     var fs = require('fs');
-    fs.appendFile('consultas.txt', a + '\t' + b + '\t' + c + '\t' + d + '\t' + e + '\r\n', function (err) {
+    const f = new Date();
+    fs.appendFile('consultas.txt', a + '\t' + b + '\t' + c + '\t' + d + '\t' + e + '\t' + f.getDate.toLocaleString("pt-BR") + '\r\n', function (err) {
     if (err) throw err;
        
       });
