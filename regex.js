@@ -296,6 +296,37 @@ const troca = (str) => {
     
 };
 
+const extenso = (str) =>{
+    let palavras = ["amanhã", "domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo", "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+    const dia = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+    var out = str.toLowerCase();
+    palavras.forEach(element => {
+
+       if(out.search(element)!=-1){
+            const d = new Date();
+            
+            var dias = new Map();
+            for (let i = 0; i < 7; i++) {
+                
+                d.setDate(d.getDate()+1);
+                if(i==0){
+                    dias.set('amanhã', d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear());
+                }
+                dias.set(dia[d.getDay()], d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear());
+                
+            }
+            var retorno = dias.get(element);
+
+            out = out.replace(element, retorno + " ");
+
+
+       }
+        
+    });
+
+    return out;
+}
+
 
 function Dif(e) {
     for (this.dias = 0; e >= 864e5; this.dias++,

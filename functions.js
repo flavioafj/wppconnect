@@ -44,6 +44,9 @@ const asses = (msg) =>{
     }
     
   });
+  if(msg.search(/R\$/)!=-1){
+    out = false;
+  }
   return out;
 }
 
