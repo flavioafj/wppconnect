@@ -1,3 +1,0 @@
-[0629/120731.234:INFO:CONSOLE(0)] "Access to image at 'https://linkpreview.ddns.info/v1/link-preview/fetch-data.png?url=https://estacionamentopatioconfins.com.br/wp/reservas/' from origin 'https://web.whatsapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.", source: https://web.whatsapp.com/ (0)
-[0629/122558.633:INFO:CONSOLE(30)] "TypeError: Cannot read properties of undefined (reading 'toString')", source: https://web.whatsapp.com/vendor1~app.0c8e960e5dfd7020f562.js (30)
-[0629/150406.280:INFO:CONSOLE(30)] "TypeError: Cannot read properties of undefined (reading 'toString')", source: https://web.whatsapp.com/vendor1~app.0c8e960e5dfd7020f562.js (30)

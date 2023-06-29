@@ -16,6 +16,9 @@ const regexp = (de, msg) =>{
     let hora_entrada = "";
     let hora_saida = "";
 
+    /*sanitiza a msg*/
+    msg = extenso(msg);
+
     /*datas*/
 
     /*1ª tentativa - datas*/
