@@ -190,8 +190,17 @@ const arrumaDatas =(str, str2, str3, str4)=>{
                 }
                 const ano_const = contex.getFullYear();
                 const mes_const = contex.getMonth() + 1;
-                str = str.split("/")[0] + "/" + mes_const + "/" + ano_const;
-                str2 = str2.split("/")[0] + "/" + mes_const + "/" + ano_const;
+
+                //patt2 x patt2
+                if(patt2.test(str2)){
+                    str = str.split("/")[0] + "/" + str.split("/")[1] + "/" + ano_const;
+                    str2 = str2.split("/")[0] + "/" + str2.split("/")[1] + "/" + ano_const;
+                //patt2 x none
+                }else{
+                    str = str.split("/")[0] + "/" + mes_const + "/" + ano_const;
+                    str2 = str2.split("/")[0] + "/" + mes_const + "/" + ano_const;
+                }
+                
 
                 const d1 = new Date(troca(str));
                 const d2 = new Date(troca(str2));
@@ -300,15 +309,20 @@ const troca = (str) => {
 };
 
 const extenso = (str) =>{
-    let palavras = ["amanhã", "domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo", "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+    const palavras = ["hoje", "amanhã"];
     const dia = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+    const mes = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
     var out = str.toLowerCase();
-    palavras.forEach(element => {
+
+    
+    dia.concat(palavras).forEach(element => {
 
        if(out.search(element)!=-1){
             const d = new Date();
-            
+            /*Dias*/
             var dias = new Map();
+            dias.set('hoje', d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear());
+
             for (let i = 0; i < 7; i++) {
                 
                 d.setDate(d.getDate()+1);
@@ -323,9 +337,33 @@ const extenso = (str) =>{
             out = out.replace(element, retorno + " ");
 
 
-       }
+        }
         
     });
+
+    /*meses*/
+    mes.forEach(element2 => {
+        if (out.includes(element2)) {
+            
+            var ret = "[0-9]{1,2}(\\s*de\\s*" + element2 + ")";
+
+            const re3 = new RegExp(ret, "g");
+
+            matches = out.matchAll(re3);
+
+            for (const mat of matches) {
+                out = out.replace(mat[1], "/" + (mes.indexOf(element2) + 1).toString().padStart(2, 0));
+            }
+
+
+            
+        }
+    });
+
+
+  
+
+    
 
     return out;
 }
