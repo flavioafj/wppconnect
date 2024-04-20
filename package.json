@@ -1,0 +1,18 @@
+{
+  "name": "wppconnect",
+  "version": "1.0.0",
+  "description": "wpp",
+  "main": "index.js",
+  "dependencies": {
+    "@wppconnect-team/wppconnect": "https://github.com/wppconnect-team/wppconnect/releases/download/nightly/wppconnect-nightly.tgz",
+    "puppeteer": "^20.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "install": "npm install"
+  },
+  "author": "",
+  "license": "ISC"
+}
