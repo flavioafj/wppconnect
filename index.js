@@ -4,6 +4,7 @@ const wppconnect = require('@wppconnect-team/wppconnect');
 const resposta = require('./functions.js');
 const consulta_preco = require('./regex.js');
 const {join} = require('path');
+const http = require('http');
 
 async function sendLoc(client, quem){
 
@@ -105,6 +106,12 @@ function start(client) {
 
 
 }
+
+
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World!');
+}).listen(8080);
 
 module.exports = {
   // Changes the cache location for Puppeteer.
